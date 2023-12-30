@@ -1,0 +1,13 @@
+<?php
+
+$period = new DatePeriod(
+  new DateTime('2010-09-01'),
+  new DateInterval('P1D'),
+  new DateTime('2010-10-05')
+);
+
+foreach ($period as $key => $value) {
+ $datehere =  $value->format('Y-m-d') ;    
+ echo   $datehere . '<br>' ;
+}
+?>
